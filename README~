@@ -1,0 +1,46 @@
+//////DATA FILES////////////////////
+1) ntu_-3_3_kin.root ( time window [-3,3] ns )
+2) ntu_acc2_kin.root (time window  [3,3] and [11,5]
+3) ntu_acc3_kin.root (time window [-11,-5] and [-11,-5]) 
+4) ntu_-11_-5_kin.root (time window [-11,-5]  and  [+11,5])
+
+
+/////////////// Electron cuts
+Cuts implemented:
+1) -6.5 < vertexZ < 6.5  (+/- 6.5 cm vertex cut)
+2) PID cut:
+   a) Cherenkov ADC sum ("Cerasum_c>150") > 1.5 photoelectron
+   b) ECAL cut preshower/w1 (>200) and sum (preshower/w1 + shower/w2)>600
+3) R-function cut (HRS acceptance) r-val>0.04
+4) Single track events for U1, V1, U2, V2) clusters
+
+////////// Photon cuts /////////////
+5) ECAL acceptance cut (1 block or 3 cm from the ECAL edge)
+6) Photon threshold cut 1.1 GeV (both photons are required to be greater than 1.1 GeV)
+7) Cluster threshold is 0.8 GeV for Kin 601 and 1.0 GeV for kin 603
+
+
+////////// Simulation //////////////
+Kin 601: dvcs_smeared_simu_601_1000M_11Thresh.root
+Kin 603: dvcs_smeared_simu_603_1900M_11Thresh.root
+
+Simulatiohn files are with following cuts:
+1) R-function cut
+2) Vertex cut
+3) Photon energy cut 1.1 GeV for both photons
+4) Edge cut for calorimeter (remove 3cm or a block from edge)
+
+
+//////////// List of the runs used for kinematic 601 and 603 ///////
+1) list_run_kin60_1.txt
+2) list_run_kin60_3.txt
+
+/////////// Cross-section table ///////////
+1) Kin 601 : xsecparams_601.txt
+2) Kin 603 : xsecparams_603.txt
+
+///////////// GK Model prediction ///////
+1) Kin 601 : GK_kin601.dat
+2) Kin 603 : GK_kin603.dat 
+
+   
